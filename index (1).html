@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNA - The Blueprint of Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #c1f0f6, #ffe4ec);
+      margin: 0;
+      padding: 0;
+      color: #222;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 50px 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      animation: fadeInPage 1s ease-out;
+    }
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      animation: slideInTop 1s ease-out;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeUp 1s ease-out forwards;
+    }
+    p:nth-of-type(1) { animation-delay: 0.6s; }
+    p:nth-of-type(2) { animation-delay: 0.9s; }
+    p:nth-of-type(3) { animation-delay: 1.2s; }
+
+    .dna-image {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+      animation: zoomIn 1s ease-out forwards;
+      animation-delay: 0.4s;
+      opacity: 0;
+    }
+
+    .dna-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .dna-image img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #666;
+      animation: fadeIn 1s ease-out;
+      animation-delay: 1.5s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+
+    /* Animations */
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInTop {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DNA: The Blueprint of Life</h1>
+
+    <div class="dna-image">
+      <img src="https://pontobiologia.com.br/wp-content/uploads/2017/12/DNA.jpg" alt="DNA illustration">
+    </div>
+
+    <p>
+      DNA, or deoxyribonucleic acid, is the hereditary material that carries genetic instructions essential for the growth,
+      development, functioning, and reproduction of all known living organisms and many viruses.
+    </p>
+
+    <p>
+      Found mainly in the cell nucleus, DNA is composed of two strands forming a double helix, built from four nucleotide bases:
+      adenine, thymine, cytosine, and guanine. These sequences encode information that directs the synthesis of proteins,
+      which are critical for cellular structure and function.
+    </p>
+
+    <p>
+      Through processes like replication and mutation, DNA enables inheritance and contributes to genetic diversity,
+      which drives evolution and adaptation in populations over time.
+    </p>
+
+    <footer>
+      &copy; 2025 Evomase Biology Club – Lebanese University
+    </footer>
+  </div>
+</body>
+</html>
